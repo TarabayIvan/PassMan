@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.ivantarabay.passman.FormController" styleClass="vbox">
+    <padding>
+        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
+    </padding>
+
+    <Label text="Password Generator" styleClass="titleLabel"/>
+    
+    <GridPane vgap="15" hgap="15">
+        <Label text="Password Length:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="lengthField" text="16" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        
+        <CheckBox fx:id="numbersCheckBox" text="Include Numbers" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="2"/>
+        <CheckBox fx:id="specialCharsCheckBox" text="Include Special Characters" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="2"/>
+    </GridPane>
+
+    <Button text="Generate Password" onAction="#onGenerateButtonClick"/>
+    
+    <TextField fx:id="passwordField" editable="false" styleClass="passwordField"/>
+    
+    <Button text="Copy to Clipboard" onAction="#onCopyButtonClick"/>
+    
+    <Text text="Made with 💜 by Brysca" fill="#8a4b6b"/>
+</VBox>

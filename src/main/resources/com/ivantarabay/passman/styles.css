@@ -1,0 +1,74 @@
+.root {
+    -fx-background-color: #f5e6ff;
+    -fx-font-family: "Trebuchet MS";
+}
+
+.label {
+    -fx-text-fill: #6b4b8a;
+    -fx-font-size: 18px;
+}
+
+.titleLabel {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #8a4b6b;
+    -fx-effect: dropshadow(gaussian, #d4b5ff, 10, 0, 0, 2);
+}
+
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d4b5ff;
+    -fx-border-radius: 5;
+    -fx-border-style: dashed;
+    -fx-background-radius: 5;
+    -fx-font-family: "Courier New", monospace;
+    -fx-font-size: 18px;
+}
+
+.check-box {
+    -fx-text-fill: #6b4b8a;
+    -fx-font-size: 18px;
+}
+
+.check-box .box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d4b5ff;
+    -fx-border-style: dashed;
+    -fx-border-radius: 3;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #d4b5ff;
+}
+
+.button {
+    -fx-background-color: #d4b5ff;
+    -fx-text-fill: #6b4b8a;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #8a4b6b;
+    -fx-border-width: 2;
+    -fx-padding: 12 20;
+    -fx-font-size: 18px;
+}
+
+.button:hover {
+    -fx-background-color: #e6d5ff;
+    -fx-effect: dropshadow(gaussian, #8a4b6b, 5, 0, 0, 1);
+}
+
+#passwordField {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #8a4b6b;
+    -fx-border-width: 2;
+    -fx-font-size: 24px;
+    -fx-padding: 12;
+    -fx-border-style: dashed;
+}
+
+.vbox {
+    -fx-background-color: #f5e6ff;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, #8a4b6b, 10, 0, 0, 2);
+} 
